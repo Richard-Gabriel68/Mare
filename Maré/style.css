@@ -1,0 +1,200 @@
+:root
+{
+    --mar: rgb(19, 88, 153);
+}
+html
+{
+    scroll-behavior: smooth;
+}
+*
+{
+    margin:0;
+    padding:0;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+/*HEADER------------------------*/
+header
+{
+    height: 100px;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: #000;
+}
+header a 
+{
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 2rem;
+    padding: 1rem;
+    
+}
+header a:hover
+{
+    color: var(--mar);
+    border-bottom: 4px solid var(--mar);
+}
+
+/*TITLE----------------------*/
+
+.banner
+{
+    background-image: url(img/tartaruga1281.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+.title
+{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.603);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.title h1
+{
+    font-size:70px;
+    margin-left: 12.5%;
+}
+
+/*ABOUT----------------------*/
+
+.About
+{
+    background-color: #000;
+}
+.About .about
+{
+    margin-top: 5rem;
+    width: 75%;
+    margin: auto;
+    margin-top: 3rem;
+}
+.About .about h1
+{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.About .about p
+{
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+/*GALLERY----------------------*/
+.gallery
+{
+    background-color: rgb(39, 39, 39);
+    padding: 2rem 0;
+}
+.photos
+{
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 2rem;
+}
+.gallery h1
+{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.photo
+{
+    width: 150px;
+    height: 150px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 8px;
+}
+.photo img
+{
+    width: 100%;
+    height: 100%;
+}
+.photo:hover
+{
+    border: 3px solid var(--mar);
+
+}
+
+/*CONTACTS----------------------*/
+
+.contacts
+{
+    width: 100vw;
+    height: 200px;
+    bottom: 0px;
+}
+i
+{
+    margin: 2rem 0;
+    font-size: 50px;
+    color: #fff;
+}
+address
+{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+address .SocialMedia
+{
+    display: flex;
+    justify-content: space-around;
+}
+address p
+{
+    color: #fff;
+    text-align: center;
+
+}
+
+/*RESPONSIVE-------------------*/
+
+@media (max-width: 700px)
+{
+    header a
+    {
+        display: none;
+    }
+
+    .photos
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width:400px)
+{
+    header a
+    {
+        display: none;
+    }
+
+    .photos
+    {
+        display: grid;
+        grid-template-columns:1fr;
+        width: 150px;
+        margin: auto;
+    }
+}
